@@ -124,7 +124,7 @@ const CFG = {
   // ── Auto-reply to booker (emailjs.com — free) ─────────────────────
   // See README for setup. Fill in all 3 to send bookers a confirmation.
   ejPublicKey  : "-c5dUKFufcB5mrRUw",  // EmailJS → Account → Public Key
-  ejServiceId  : "service_lc7jo4n",  // EmailJS → Email Services → Service ID
+  ejServiceId  : "service_1kxj1rm",  // EmailJS → Email Services → Service ID
   ejTemplateId : "template_ctf27my",  // EmailJS → Email Templates → Template ID
 };
 
@@ -569,7 +569,7 @@ function selDate(k){S.sd=S.sd===k?null:k;S.st=null;render();}
 function selTime(t){S.st=S.st===t?null:t;render();}
 function goConfirm(){S.step="confirm";S.berr="";render();}
 function backPick(){S.step="pick";S.berr="";render();}
-function bookAgain(){S.step="pick";S.sd=null;S.st=null;S.name="";S.email="";S.note="";render();}
+function bookAgain(){S.step="pick";S.view="pub";S.sd=null;S.st=null;S.name="";S.email="";S.note="";S.cancelId=null;S.cancelStatus="";render();}
 function goLogin(){S.view="login";S.pw="";S.pwerr=false;render();}
 function goBack(){S.view="pub";render();}
 function exitAdm(){S.view="pub";render();}
